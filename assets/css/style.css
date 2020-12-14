@@ -155,6 +155,7 @@ img {
     text-align: center;
     background-color: #000;
     transition: 0.4s;
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
   }
@@ -213,4 +214,34 @@ img {
 
 .scroll-header .nav__menu {
   background-color: var(--first-color-lighten);
+}
+
+/* scroll top*/
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(123, 111, 113, 0.7);
+  border-radius: 0.5rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.scrolltop:hover {
+  background-color: var(--first-color);
+}
+.scrolltop__icon {
+  font-size: 2rem;
+  color: var(--first-color-lighten);
+}
+
+/*show scrollup*/
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
 }
