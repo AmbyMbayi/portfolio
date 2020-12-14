@@ -320,7 +320,13 @@ img {
 .button-light {
   background-color: var(--first-color-light);
 }
-
+.button-white {
+  background-color: var(--first-color-lighten);
+  color: var(--first-color-dark);
+}
+.button-white:hover {
+  background-color: var(--first-color-lighten);
+}
 /*about*/
 
 .about__data {
@@ -404,5 +410,28 @@ img {
 }
 .services__data:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0 6px 8px rgba(174, 190, 205, 0.3);
+  box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+}
+
+/* project in mind*/
+.project__container {
+  padding: 1.5rem;
+  background-color: var(--first-color-dark);
+  color: var(--first-color-lighten);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.project__icon,
+.project__title {
+  margin-bottom: var(--mb-1);
+}
+.project__icon {
+  font-size: 3.5rem;
+}
+.project__title {
+  font-size: 1.5rem;
+}
+.project__description {
+  margin-bottom: var(--mb-4);
 }
