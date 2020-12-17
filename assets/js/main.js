@@ -67,3 +67,46 @@ function scrollTop(){
 }
 
 window.addEventListener('scroll', scrollTop) 
+
+/* mixitup flter portfolio*/
+
+ const mixer = mixitup('.portfolio__container', {
+     selectors: {
+         target: '.portfolio__content',
+     }, 
+     animation: {
+         duration: 400
+     }
+ })
+
+
+ /* link active portfolio*/
+
+ const linkPortfolio = document.querySelectorAll('.portfolio__item')
+
+ function activePortfolio(){
+     if(linkPortfolio){
+         linkPortfolio.forEach(l => l.classList.remove('active-portfolio'))
+         this.classList.add('active-portfolio')
+     }
+ }
+
+ linkPortfolio.forEach(l =>l.addEventListener('click', activePortfolio))
+
+
+ /*scroll reveal animation*/
+
+ /* scroll reveal animation*/
+
+const sr = ScrollReveal({
+    origin:'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.home__data, .home__social, .home__img, .about, .about__container, .about__data, .about__img, .qualification, .qualification__container, .qualification__content, .qualification__data,
+.services, .services__container,  .project__data, .portfolio, .portfolio__nav, .portfolio__content, .contact, .contact__container, .contact__content
+, .footer__container, .footer__social`,{
+    interval: 200
+})

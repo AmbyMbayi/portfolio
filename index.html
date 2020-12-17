@@ -220,10 +220,169 @@
           </div>
         </div>
       </section>
+
       <!--Porfolio-->
+      <section class="portfolio section bd-container" id="portfolio">
+        <span class="section-subtitle">My recent projects</span>
+        <h2 class="section-title">Porfolio</h2>
+        <div class="portfolio__nav">
+          <span class="portfolio__item active-portfolio" data-filter="all"
+            >All</span
+          >
+          <span class="portfolio__item" data-filter=".web">Web</span>
+          <span class="portfolio__item" data-filter=".ui">UI/UX</span>
+          <span class="portfolio__item" data-filter=".app">App</span>
+        </div>
+        <div class="portfolio__container bd-grid">
+          <div class="portfolio__content mix web">
+            <a href="#"
+              ><img
+                src="assets/images/mobile.jpg"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">web Development</span>
+              <a href="#"
+                ><h2 class="portfolio__title">New Pizza landing page</h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+          <div class="portfolio__content mix web">
+            <a href="#"
+              ><img
+                src="assets/images/graphics-design.png"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">Graphics Designs</span>
+              <a href="#"><h2 class="portfolio__title">Graphic designs</h2></a>
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix ui">
+            <a href="#"
+              ><img
+                src="assets/images/web-design.jpg"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">web Development</span>
+              <a href="#"
+                ><h2 class="portfolio__title">New Pizza landing page</h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix app">
+            <a href="#"
+              ><img
+                src="assets/images/ux-design.png"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">UX Designs</span>
+              <a href="#"><h2 class="portfolio__title">UX design done</h2></a>
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Testimonials-->
+
+      <!--contact Me-->
+      <section class="contact section bd-container" id="contact">
+        <span class="section-subtitle">For Projects</span>
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact__container bd-grid">
+          <div class="contact__content bd-grid">
+            <div class="contact__box">
+              <i class="bx bxs-home contact__icon"></i>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__description">#356 Uhuru -Garden</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bxs-phone contact__icon"></i>
+              <h3 class="contact__title">Phone</h3>
+              <span class="contact__description">+254 716 402 525</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bxs-envelope contact__icon"></i>
+              <h3 class="contact__title">Gmail</h3>
+              <span class="contact__description">ambymbayi54@gmail.com</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bxs-chat contact__icon"></i>
+              <h3 class="contact__title">Chat</h3>
+              <div>
+                <a href="#" class="contact__social"
+                  ><i class="bx bxl-whatsapp"></i
+                ></a>
+                <a href="#" class="contact__social"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a href="#" class="contact__social"
+                  ><i class="bx bxs-message-square-detail"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <input type="text" placeholder="Name" class="contact__input" />
+              <input type="email" placeholder="Email" class="contact__input" />
+            </div>
+            <div class="contact__inputs">
+              <input type="text" placeholder="Project" class="contact__input" />
+              <input
+                type="number"
+                placeholder="Number"
+                class="contact__input"
+              />
+            </div>
+            <textarea
+              class="contact__input"
+              cols="0"
+              rows="7"
+              placeholder="message"
+            ></textarea>
+
+            <input
+              type="submit"
+              value="Send Message"
+              class="button contact__button"
+            />
+          </form>
+        </div>
+      </section>
     </main>
+
     <!--footer-->
+    <footer class="footer">
+      <div class="footer__container bd-container">
+        <h1 class="footer__title">Amby Mbayi</h1>
+        <p class="footer__description">My porfolio</p>
+        <div class="footer__social">
+          <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
+          <a href="#" class="footer__link"><i class="bx bxl-dribbble"></i></a>
+        </div>
+        <p class="footer__copy">&#169; 2020 ambymbayi</p>
+      </div>
+    </footer>
     <!--Mix it up filter-->
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--swiper js-->
 
     <script src="assets/js/main.js"></script>
