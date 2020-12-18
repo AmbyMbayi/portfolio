@@ -144,6 +144,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -424,29 +425,6 @@ img {
   box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
 }
 
-/* project in mind*/
-.project__container {
-  padding: 1.5rem 1rem;
-  background-color: var(--first-color-dark);
-  color: var(--first-color-lighten);
-  border-radius: 0.5rem;
-  text-align: center;
-}
-
-.project__icon,
-.project__title {
-  margin-bottom: var(--mb-1);
-}
-.project__icon {
-  font-size: 3.5rem;
-}
-.project__title {
-  font-size: 1.5rem;
-}
-.project__description {
-  margin-bottom: var(--mb-4);
-}
-
 /*portfolio*/
 
 .portfolio__nav {
@@ -528,37 +506,6 @@ img {
 .contact__box:hover {
   box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
 }
-.contact__inputs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1rem;
-}
-.contact__input,
-.contact__button {
-  outline: none;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
-.contact__input {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid var(--first-color-light);
-  color: var(--first-color);
-  border-radius: 0.1rem;
-  margin-bottom: var(--mb-1);
-}
-
-.contact::placeholder {
-  color: var(--first-color-light);
-  font-family: var(--body-font);
-  font-weight: var(--font-semi-bold);
-}
-
-.contact__button {
-  cursor: pointer;
-  border: none;
-}
 
 /*footer*/
 
@@ -598,10 +545,14 @@ img {
 }
 
 /*media queries*/
-
+@media screen and (max-width: 576px) {
+  .home__img img {
+    width: 400px;
+  }
+}
 @media screen and (min-width: 576px) {
   .home__img img {
-    width: 330px;
+    width: 400px;
   }
   .about__container,
   .qualification__container,
@@ -662,7 +613,7 @@ img {
     margin-bottom: 0;
   }
   .home__img img {
-    width: 400px;
+    width: 450px;
   }
 
   .about__description {
@@ -679,29 +630,17 @@ img {
   .portfolio__container {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .project__container {
-    padding: 4.5rem 0;
-  }
-  .project__data {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .project__icon,
-  .project__title,
-  .project__description {
-    margin-bottom: 0;
-  }
-  .project__icon {
-    font-size: 6rem;
-  }
-  .project__title {
-    font-size: 2.5rem;
-  }
 }
 
 @media screen and (min-width: 1024px) {
+  .home__img {
+    margin-top: 10px;
+  }
+  .home__img img {
+    width: 600px;
+    position: relative;
+    margin-top: 1px;
+  }
   .bd-container {
     margin-left: auto;
     margin-right: auto;

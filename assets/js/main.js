@@ -96,7 +96,7 @@ window.addEventListener('scroll', scrollTop)
 
  /*scroll reveal animation*/
 
- /* scroll reveal animation*/
+ /* scroll reveal animation
 
 const sr = ScrollReveal({
     origin:'top',
@@ -110,3 +110,5 @@ sr.reveal(`.home__data, .home__social, .home__img, .about, .about__container, .a
 , .footer__container, .footer__social`,{
     interval: 200
 })
+
+*/
